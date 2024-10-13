@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+}
+.main_container {
+    display: flex;
+}
+.main_content {
+    display: flex;
+    flex-direction: column;
+    background-image: url(src/image/natureBG.jpg);
+    background-size: cover;
+    width: 70vw;
+    height: 100dvh;
+    box-shadow: 0px 0px 100px 100px rgba(0, 0, 0, 0.35) inset;
+    align-items: center;
+    color: white;
+    font-family: 'Poppins', sans-serif; 
+    font-size: xx-large;
+    justify-content: space-between;
+}
+.expense_button>button{
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    border-radius: 0.5rem;
+}
+.expense_block-button_edit {
+    background-image: url(src/image/edit-3-svgrepo-com.svg);
+}
+.expense_block-button_delete {
+    background-image: url(src/image/bin-svgrepo-com.svg);
+}
+.expense_container{
+    width: 95%;
+    padding-top: 50px;
+    overflow-y: auto;
+    scrollbar-color: #243131 #b3b3b3;
+    scrollbar-width: 8px;
+    overflow-x: hidden;
+}
+.total_expense {
+    padding: 20px 0;
+}
+.expense_block_day{
+    display: flex;
+    border-bottom: 2px solid white;
+    padding: 10px;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+}
+.calc_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-left: 3px solid #101616;
+    background-color: #1f2a26;
+    width: 30vw;
+    justify-content: space-between;
+}
+
+h2 {
+    color: white;
+    padding-bottom: 10px;
+}
+.consumption_container {
+    border: 3px solid #101616;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+}
+.consumption_container>input {
+    width: 20vw;
+    padding: 5px 0;
+    text-align: center;
+    outline: none;
+	user-select: none;
+	appearance: none;
+    border-bottom: 3px solid white;
+    color: white;
+    font-family: 'Poppins', sans-serif; 
+    font-size: large;
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+.consumption_container>input:focus::placeholder {
+    color: transparent;
+  }
+.btn {
+    background-color: transparent;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    border: 2px solid white;
+    transition: background-color 0.5s;
+}
+.btn:hover {
+    background-color: white;
+    color: #101616;
+    border: 2px solid #101616;
+
+}
+.btn:active {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.btn_container_dwm {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    overflow-y: hidden;
+}
+
+.btn_container_dwm>button {
+    width: 100%;
+    padding: 15px;
+    font-size: x-large;
+}
+.add_expense_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.calculation {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: large;
+    border: 3px solid #101616;
+    width: 68.598%;
+    gap: 15px;
+}
+#expense {
+    color : coral;
+}
+#income {
+    color : greenyellow
+}
+#result {
+    color : limegreen;
+}
+.result_block>div {
+    display: flex;
+    border-bottom: 2px solid #101616; 
+    justify-content: space-between;
+    width: 100%;
+}
+.result_block>div>div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.result_block{
+    height: 100%;
+}
+.result_block>div>div:first-child {
+    border-right: 2px solid #101616;
+}
+#result_month{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#enter_income {
+    display: flex;
+    padding: 10px 20px 10px 20px ;
+    border-top: 2px solid #101616;
+    align-items: baseline;
+    gap: 10px;
+    align-items: flex-end;
+}
+#enter_income>input {
+    width: 90%;
+    padding: 5px 0;
+    text-align: center;
+    outline: none;
+    user-select: none;
+    appearance: none;
+    border-bottom: 3px solid white;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: large;
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+#enter_income>span {
+    width: 100%;
+}
+#ps{
+    color:#525c5c
+}
+.expense_block_day>div{
+    width: 35%;
+    text-align: start;
+}
+.expense_block_day>div:last-child{
+    width: 10%;
+    text-align: end;
+    display: flex;
+    justify-content: flex-end;
+}
+.btn_container_dwm {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+}
+.button-container{
+    display: flex;
+    width: 95%;
+    padding: auto;
+    padding-top: 10px;
+}
+.btn_container_dwm>div>button{
+    width: 100%;
+    padding: 15px;
+}
+.expense_names{
+    word-wrap:break-word;
+}

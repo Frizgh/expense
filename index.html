@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calc</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main_container">
+        <div class="main_content">
+            <div class="btn_container_dwm">
+                <div class="button-container">
+                    <button class="expense-day btn">Day</button>
+                    <button class="expense-week btn">Week</button>
+                    <button class="expense-month btn">Month</button>
+                </div>
+                <div class="expense_container"></div>
+            </div>
+            <div class="count_total"></div>
+        </div>
+
+        <div class="calc_container">
+            <div class="calculation">
+                <div class="result_block">
+                    <div>
+                        <div>Total expenses for month: <strong id="expense"></strong></div>
+                        <div>Total income: <strong id="income"></strong></div>
+                    </div>
+                </div>
+                <div id="result_month">
+                    <span>Result for month:</span> <strong id="result"></strong>
+                </div>
+                <div id="enter_income">
+                    <span>Enter your monthly income:</span>
+                    <input type="number" id="input_income">
+                    <button class="btn add_income">Add</button>
+                </div>
+            </div>
+            <div class="add_expense_container">
+                <h2>Create new expense</h2>
+                <div class="consumption_container">
+                    <input type="text" class="expense_name_input" placeholder="Expense name">
+                    <input type="number" class="expense_price_input" placeholder="Expense cost">
+                    <button class="btn expense">Add expense</button>
+                </div>
+            </div>
+            <h2 id="ps">PS: 1 month = 30 days</h2>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="src/main.js"></script>
+</body>
+
+</html>
